@@ -1,0 +1,104 @@
+@import "reset.css";
+body {
+  background-color: #ffffff;
+  color: #111111;
+  font-family: Palatino, "Times New Roman", Times, serif;
+}
+
+section h1 {
+  font-size: 4rem;
+  font-style: italic;
+  font-weight: normal;
+  letter-spacing: -0.03em;
+}
+
+section {
+  margin-top: 3rem;
+}
+
+.container {
+  width: auto;
+  max-width: 1400px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 32px;
+}
+@media screen and (min-width: 600px) {
+  .container {
+    padding: 32px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    padding: 64px;
+  }
+}
+
+.header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 16px;
+  grid-row-gap: 0px;
+}
+
+section.section-1 {
+  min-height: 100vh;
+  padding-top: 20vmax;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  font-size: 14px;
+}
+@media screen and (min-width: 600px) {
+  html {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+p {
+  font-size: 1.15rem;
+  line-height: 1.6;
+}
+p a {
+  color: #111111;
+  transition: color 0.2s;
+}
+p a:hover {
+  color: #84b082;
+}
+
+p.big {
+  font-size: 1.4rem;
+  color: #FFBB00;
+}
+
+.social-links {
+  margin: 0 auto;
+  text-align: center;
+}
+@media screen and (min-width: 376px) {
+  .social-links {
+    margin: 0;
+    text-align: left;
+  }
+}
+
+ion-icon {
+  font-size: 24px;
+  color: #111111;
+  padding: 8px;
+  transition: color 0.15s, background 0.3s;
+  border-radius: 100%;
+}
+
+ion-icon:hover {
+  color: #ffffff;
+  background-color: #111111;
+}
