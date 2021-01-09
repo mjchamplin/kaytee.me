@@ -3,11 +3,10 @@
 // Color Variables
 $white: #ffffff
 $black: #111111
-$blue: #C46041
+$red: #C46041
 $pink: #FFD8CA
 
-$red: #AA4B39
-$green: #84b082
+$green: #0B4C45
 $yellow: #FFBB00
 
 // Font Variables
@@ -18,7 +17,7 @@ $sans-serif: 'Poppins', Helvetica, sans-serif
 
 body
   background-color: $pink
-  color: $blue
+  color: $red
   font-family: $sans-serif
 
 @media screen and (min-width: 600px)
@@ -55,7 +54,7 @@ body
   font-size: 1rem
   line-height: 1rem
   font-weight: bold
-  color: $blue
+  color: $red
   vertical-align: middle
 
 section
@@ -75,7 +74,7 @@ section.intro
 p.big
   font-size: 48px
   line-height: 66px
-  color: $blue
+  color: $red
   font-weight: bold
   max-width: 936px
   display: block
@@ -146,10 +145,17 @@ section.testimonials
   p.testimonial-attribution
     margin-top: 24px
     font-weight: 600
-    color: $blue
+    color: $red
 
 .testimonial:nth-of-type(2)
     background-color: rgba(0,0,0,.08)
+
+footer
+  width: 100%
+  .copyright
+    text-align: center
+    font-size: .8rem
+    color: $black
 
 // Typography Overrides (optional)
 
@@ -195,5 +201,5 @@ ion-icon
   transition: color .15s, background .3s
   //border-radius: 100%
 ion-icon:hover
-  color: $blue
+  color: $red
   //background-color: $black

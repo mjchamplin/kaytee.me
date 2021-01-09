@@ -178,6 +178,15 @@ section.testimonials {
   background-color: rgba(0, 0, 0, 0.08);
 }
 
+footer {
+  width: 100%;
+}
+footer .copyright {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #111111;
+}
+
 html {
   -webkit-font-smoothing: antialiased;
   font-size: 14px;
@@ -212,7 +221,7 @@ p a {
   transition: color 0.2s;
 }
 p a:hover {
-  color: #84b082;
+  color: #0B4C45;
 }
 
 .social-links {
