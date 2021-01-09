@@ -3,18 +3,64 @@
 // Color Variables
 $white: #ffffff
 $black: #111111
+$blue: #C46041
+$pink: #FFD8CA
+
 $red: #AA4B39
 $green: #84b082
 $yellow: #FFBB00
 
 // Font Variables
 $serif: Palatino, "Times New Roman", Times, serif
-$sans-serif: Helvetica Neue, Helvetica, Arial, sans-serif
+$sans-serif: 'Poppins', Helvetica, sans-serif
+
+// Globals
 
 body
-  background-color: $white
-  color: $black
-  font-family: $serif
+  background-color: $pink
+  color: $blue
+  font-family: $sans-serif
+
+@media screen and (min-width: 600px)
+  .right
+    float: right
+  .left
+    float: left
+
+// Elements
+
+.container
+  width: auto
+  max-width: 1128px
+  min-height: 100vh
+  margin: 0 auto
+  padding: 0 32px
+  @media screen and (min-width: 600px)
+    padding: 0 32px
+  @media screen and (min-width: 1024px)
+    padding: 0 64px
+
+.header
+  padding: 32px 0
+
+.header-inner
+  display: grid
+  grid-template-columns: repeat(2, 1fr)
+  grid-template-rows: 1fr
+  grid-column-gap: 16px
+  grid-row-gap: 0px
+  div
+    display: block
+.name
+  font-size: 1rem
+  line-height: 1rem
+  font-weight: bold
+  color: $blue
+  vertical-align: middle
+
+section
+  margin-top: 3rem
+  display: block
 
 section h1
   font-size: 4rem
@@ -22,32 +68,91 @@ section h1
   font-weight: normal
   letter-spacing: -.03em
 
-section
-  margin-top: 3rem
+section.intro
+  min-height: 90vh
+  position: relative
 
-.container
-  width: auto
-  max-width: 1400px
-  min-height: 100vh
-  margin: 0 auto
-  padding: 32px
+p.big
+  font-size: 48px
+  line-height: 66px
+  color: $blue
+  font-weight: bold
+  max-width: 936px
+  display: block
+  position: absolute
+  bottom: 160px
+
+section.about
+  margin-bottom: 280px
+  p
+    font-size: 2rem
+  p:first-of-type
+    margin-top: 172px
+    font-weight: bold
+
+section.work-history
+  margin-bottom: 160px
+  h3
+    font-size: 28px
+    margin: 0 0 8px
+  p
+    margin: 0
+
+.job
+  display: flow-root
+  margin-bottom: 80px
+
+.job-meta
   @media screen and (min-width: 600px)
-    padding: 32px
-  @media screen and (min-width: 1024px)
-    padding: 64px
+    float: left
+    width: 25%
+  p
+    font-size: 22px
 
-.header
-  display: grid
-  grid-template-columns: repeat(3, 1fr)
-  grid-template-rows: 1fr
-  grid-column-gap: 16px
-  grid-row-gap: 0px
+.job-description
+  color: $black
+  @media screen and (min-width: 600px)
+    float: left
+    width: 75%
+  p
+    font-size: 20px
+    line-height: 30px
+    font-weight: normal
 
-section.section-1
-  min-height: 100vh
-  padding-top: 20vmax
+section.testimonials
+  display: flow-root
+  margin-bottom: 10rem
+
+.testimonial
+  box-sizing: border-box
+  display: flow-root
+  width: 100%
+  min-height: 100px
+  float: left
+  padding: 64px 0
+  background-color: rgba(0,0,0,.04)
+  @media screen and (min-width: 960px)
+    width: 50%
+  .testimonial-inner
+    margin: 0 40px
+    @media screen and (min-width: 960px)
+      max-width: 468px
+      margin: 0 104px
+
+  p
+    margin: 0
+    color: $black
+    font-size: 20px
+  p.testimonial-attribution
+    margin-top: 24px
+    font-weight: 600
+    color: $blue
+
+.testimonial:nth-of-type(2)
+    background-color: rgba(0,0,0,.08)
 
 // Typography Overrides (optional)
+
 html
   -webkit-font-smoothing: antialiased
   font-size: 14px
@@ -55,7 +160,14 @@ html
     font-size: 16px
   @media screen and (min-width: 1024px)
     font-size: 18px
-
+h2
+  font-size: 20px
+  font-weight: 500
+  text-transform: uppercase
+  color: $black
+  letter-spacing: 4px
+  text-align: center
+  margin: 0 0 64px
 p
   font-size: 1.15rem
   line-height: 1.6
@@ -65,25 +177,23 @@ p
   a:hover
     color: $green
 
-p.big
-  font-size: 1.4rem
-  color: $yellow
-
 // Social Buttons
 
 .social-links
   margin: 0 auto
   text-align: center
+  justify-self: end
   @media screen and (min-width: 376px)
     margin: 0
     text-align: left
 
+
 ion-icon
   font-size: 24px
   color: $black
-  padding: 8px
+  margin: 0 4px
   transition: color .15s, background .3s
-  border-radius: 100%
+  //border-radius: 100%
 ion-icon:hover
-  color: $white
-  background-color: $black
+  color: $blue
+  //background-color: $black

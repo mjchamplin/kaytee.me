@@ -1,8 +1,63 @@
 @import "reset.css";
 body {
-  background-color: #ffffff;
-  color: #111111;
-  font-family: Palatino, "Times New Roman", Times, serif;
+  background-color: #FFD8CA;
+  color: #C46041;
+  font-family: "Poppins", Helvetica, sans-serif;
+}
+
+@media screen and (min-width: 600px) {
+  .right {
+    float: right;
+  }
+
+  .left {
+    float: left;
+  }
+}
+.container {
+  width: auto;
+  max-width: 1128px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+@media screen and (min-width: 600px) {
+  .container {
+    padding: 0 32px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    padding: 0 64px;
+  }
+}
+
+.header {
+  padding: 32px 0;
+}
+
+.header-inner {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 16px;
+  grid-row-gap: 0px;
+}
+.header-inner div {
+  display: block;
+}
+
+.name {
+  font-size: 1rem;
+  line-height: 1rem;
+  font-weight: bold;
+  color: #C46041;
+  vertical-align: middle;
+}
+
+section {
+  margin-top: 3rem;
+  display: block;
 }
 
 section h1 {
@@ -12,39 +67,115 @@ section h1 {
   letter-spacing: -0.03em;
 }
 
-section {
-  margin-top: 3rem;
+section.intro {
+  min-height: 90vh;
+  position: relative;
 }
 
-.container {
-  width: auto;
-  max-width: 1400px;
-  min-height: 100vh;
-  margin: 0 auto;
-  padding: 32px;
+p.big {
+  font-size: 48px;
+  line-height: 66px;
+  color: #C46041;
+  font-weight: bold;
+  max-width: 936px;
+  display: block;
+  position: absolute;
+  bottom: 160px;
+}
+
+section.about {
+  margin-bottom: 280px;
+}
+section.about p {
+  font-size: 2rem;
+}
+section.about p:first-of-type {
+  margin-top: 172px;
+  font-weight: bold;
+}
+
+section.work-history {
+  margin-bottom: 160px;
+}
+section.work-history h3 {
+  font-size: 28px;
+  margin: 0 0 8px;
+}
+section.work-history p {
+  margin: 0;
+}
+
+.job {
+  display: flow-root;
+  margin-bottom: 80px;
+}
+
+@media screen and (min-width: 600px) {
+  .job-meta {
+    float: left;
+    width: 25%;
+  }
+}
+.job-meta p {
+  font-size: 22px;
+}
+
+.job-description {
+  color: #111111;
 }
 @media screen and (min-width: 600px) {
-  .container {
-    padding: 32px;
+  .job-description {
+    float: left;
+    width: 75%;
   }
 }
-@media screen and (min-width: 1024px) {
-  .container {
-    padding: 64px;
+.job-description p {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: normal;
+}
+
+section.testimonials {
+  display: flow-root;
+  margin-bottom: 10rem;
+}
+
+.testimonial {
+  box-sizing: border-box;
+  display: flow-root;
+  width: 100%;
+  min-height: 100px;
+  float: left;
+  padding: 64px 0;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+@media screen and (min-width: 960px) {
+  .testimonial {
+    width: 50%;
   }
 }
-
-.header {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr;
-  grid-column-gap: 16px;
-  grid-row-gap: 0px;
+.testimonial .testimonial-inner {
+  margin: 0 40px;
+}
+@media screen and (min-width: 960px) {
+  .testimonial .testimonial-inner {
+    max-width: 468px;
+    margin: 0 104px;
+  }
+}
+.testimonial p {
+  margin: 0;
+  color: #111111;
+  font-size: 20px;
+}
+.testimonial p.testimonial-attribution {
+  margin-top: 24px;
+  font-weight: 600;
+  color: #C46041;
 }
 
-section.section-1 {
-  min-height: 100vh;
-  padding-top: 20vmax;
+.testimonial:nth-of-type(2) {
+  background-color: rgba(0, 0, 0, 0.08);
 }
 
 html {
@@ -62,6 +193,16 @@ html {
   }
 }
 
+h2 {
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #111111;
+  letter-spacing: 4px;
+  text-align: center;
+  margin: 0 0 64px;
+}
+
 p {
   font-size: 1.15rem;
   line-height: 1.6;
@@ -74,14 +215,10 @@ p a:hover {
   color: #84b082;
 }
 
-p.big {
-  font-size: 1.4rem;
-  color: #FFBB00;
-}
-
 .social-links {
   margin: 0 auto;
   text-align: center;
+  justify-self: end;
 }
 @media screen and (min-width: 376px) {
   .social-links {
@@ -93,12 +230,10 @@ p.big {
 ion-icon {
   font-size: 24px;
   color: #111111;
-  padding: 8px;
+  margin: 0 4px;
   transition: color 0.15s, background 0.3s;
-  border-radius: 100%;
 }
 
 ion-icon:hover {
-  color: #ffffff;
-  background-color: #111111;
+  color: #C46041;
 }
