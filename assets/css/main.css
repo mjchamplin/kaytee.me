@@ -72,13 +72,13 @@ section.intro {
   position: relative;
 }
 
-.big {
+.intro-container {
   max-width: 936px;
   display: block;
   position: absolute;
   bottom: 160px;
 }
-.big p {
+.intro-container p {
   font-size: 48px;
   line-height: 66px;
   color: #C46041;
