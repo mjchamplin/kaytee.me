@@ -72,15 +72,21 @@ section.intro {
   position: relative;
 }
 
-p.big {
-  font-size: 48px;
-  line-height: 66px;
-  color: #C46041;
-  font-weight: bold;
+.big {
   max-width: 936px;
   display: block;
   position: absolute;
   bottom: 160px;
+}
+.big p {
+  font-size: 48px;
+  line-height: 66px;
+  color: #C46041;
+  font-weight: bold;
+}
+
+p.big-links {
+  font-size: 36px;
 }
 
 section.about {
@@ -147,7 +153,8 @@ section.testimonials {
   min-height: 100px;
   float: left;
   padding: 64px 0;
-  background-color: rgba(0, 0, 0, 0.04);
+  background-color: #C17A64;
+  color: #ffffff;
 }
 @media screen and (min-width: 960px) {
   .testimonial {
@@ -165,17 +172,15 @@ section.testimonials {
 }
 .testimonial p {
   margin: 0;
-  color: #111111;
   font-size: 20px;
 }
 .testimonial p.testimonial-attribution {
   margin-top: 24px;
   font-weight: 600;
-  color: #C46041;
 }
 
 .testimonial:nth-of-type(2) {
-  background-color: rgba(0, 0, 0, 0.08);
+  background-color: #DE8F77;
 }
 
 footer {
@@ -217,11 +222,12 @@ p {
   line-height: 1.6;
 }
 p a {
-  color: #111111;
-  transition: color 0.2s;
+  color: #C46041;
+  transition: color 0.2s, background 0.2s;
 }
 p a:hover {
-  color: #0B4C45;
+  color: #111111;
+  background: #DE8F77;
 }
 
 .social-links {
@@ -238,11 +244,11 @@ p a:hover {
 
 ion-icon {
   font-size: 24px;
-  color: #111111;
-  margin: 0 4px;
-  transition: color 0.15s, background 0.3s;
+  color: #C46041;
+  margin: 0 6px;
+  transition: color 0.2s;
 }
 
 ion-icon:hover {
-  color: #C46041;
+  color: #111111;
 }
