@@ -85,6 +85,13 @@ section.intro {
   font-weight: bold;
 }
 
+p.big {
+  font-size: 48px;
+  line-height: 66px;
+  color: #C46041;
+  font-weight: bold;
+}
+
 p.big-links {
   font-size: 36px;
 }
@@ -181,6 +188,11 @@ section.testimonials {
 
 .testimonial:nth-of-type(2) {
   background-color: #DE8F77;
+}
+
+section.contact {
+  text-align: center;
+  margin: 3rem 0;
 }
 
 footer {
