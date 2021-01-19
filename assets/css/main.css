@@ -79,10 +79,16 @@ section.intro {
   bottom: 160px;
 }
 .intro-container p {
-  font-size: 48px;
-  line-height: 66px;
-  color: #C46041;
+  font-size: 24px;
+  line-height: 36px;
   font-weight: bold;
+}
+@media screen and (min-width: 600px) {
+  .intro-container p {
+    font-size: 48px;
+    line-height: 66px;
+    font-weight: bold;
+  }
 }
 
 p.big {
@@ -92,15 +98,35 @@ p.big {
   font-weight: bold;
 }
 
-p.big-links {
-  font-size: 36px;
+p.big-links a {
+  display: block;
+}
+p.big-links .bullet {
+  display: none;
+}
+@media screen and (min-width: 600px) {
+  p.big-links {
+    font-size: 36px;
+  }
+  p.big-links a {
+    display: inline;
+  }
+  p.big-links .bullet {
+    display: inline;
+  }
 }
 
 section.about {
   margin-bottom: 280px;
 }
 section.about p {
-  font-size: 2rem;
+  font-size: 24px;
+  line-height: 36px;
+}
+@media screen and (min-width: 600px) {
+  section.about p {
+    font-size: 2rem;
+  }
 }
 section.about p:first-of-type {
   margin-top: 172px;

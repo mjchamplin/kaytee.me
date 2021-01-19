@@ -80,24 +80,43 @@ section.intro
   position: absolute
   bottom: 160px
   p
-    font-size: 48px
-    line-height: 66px
-    color: $red
+    font-size: 24px
+    line-height: 36px
     font-weight: bold
+  @media screen and (min-width: 600px)
+    p
+      font-size: 48px
+      line-height: 66px
+      font-weight: bold
 
 p.big
   font-size: 48px
   line-height: 66px
   color: $red
   font-weight: bold
+
+
 p.big-links
-  font-size: 36px
+  a
+    display: block
+  .bullet
+    display: none
+  @media screen and (min-width: 600px)
+    font-size: 36px
+    a
+      display: inline
+    .bullet
+      display: inline
 
 
 section.about
   margin-bottom: 280px
   p
-    font-size: 2rem
+    font-size: 24px
+    line-height: 36px
+  @media screen and (min-width: 600px)
+    p
+      font-size: 2rem
   p:first-of-type
     margin-top: 172px
     font-weight: bold
