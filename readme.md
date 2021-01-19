@@ -1,3 +1,3 @@
 # Personal One-Pager / Online Resume
 
-https://favicon.io/
+Favicon via https://favicon.io/
