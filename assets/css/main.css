@@ -53,6 +53,8 @@ body {
   font-weight: bold;
   color: #C46041;
   vertical-align: middle;
+  margin: 0;
+  display: inline;
 }
 
 section {
@@ -100,6 +102,7 @@ p.big {
 
 p.big-links a {
   display: block;
+  font-weight: bold;
 }
 p.big-links .bullet {
   display: none;
@@ -216,6 +219,44 @@ section.testimonials {
   background-color: #DE8F77;
 }
 
+@media screen and (min-width: 960px) {
+  .work {
+    display: flow-root;
+  }
+
+  .work-block {
+    width: 30%;
+    max-width: 360px;
+    margin: 0 24px 0 0;
+  }
+
+  .work-block:nth-of-type(3) {
+    margin: 0;
+  }
+}
+.work h3 {
+  color: #111111;
+  font-size: 28px;
+  line-height: 40px;
+  margin: 0 0 8px;
+}
+.work a {
+  color: inherit;
+  text-decoration: none;
+}
+.work p {
+  color: #111111;
+  margin: 0;
+  font-size: 20px;
+  line-height: 30px;
+}
+.work p.work-meta {
+  color: #C46041;
+  font-size: 22px;
+  line-height: normal;
+  margin: 0 0 16px;
+}
+
 section.contact {
   text-align: center;
   margin: 3rem 0;
@@ -259,11 +300,13 @@ p {
   font-size: 1.15rem;
   line-height: 1.6;
 }
-p a {
+
+a {
   color: #C46041;
   transition: color 0.2s, background 0.2s;
 }
-p a:hover {
+
+a:hover {
   color: #111111;
   background: #DE8F77;
 }
