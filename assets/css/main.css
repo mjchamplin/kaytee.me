@@ -129,6 +129,7 @@ section.about p {
 @media screen and (min-width: 600px) {
   section.about p {
     font-size: 2rem;
+    line-height: 52px;
   }
 }
 section.about p:first-of-type {
