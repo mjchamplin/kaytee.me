@@ -224,23 +224,23 @@ section.testimonials {
   width: 100%;
   margin: 0 0 48px 0;
 }
-.work h3 {
+.work .work-block h3 {
   color: #111111;
   font-size: 28px;
   line-height: 40px;
   margin: 0 0 8px;
 }
-.work a {
+.work .work-block a {
   color: inherit;
   text-decoration: none;
 }
-.work p {
+.work .work-block p {
   color: #111111;
   margin: 0;
   font-size: 20px;
   line-height: 30px;
 }
-.work p.work-meta {
+.work .work-block p.work-meta {
   color: #C46041;
   font-size: 22px;
   line-height: normal;
@@ -312,6 +312,10 @@ a {
 a:hover {
   color: #111111;
   background: #DE8F77;
+}
+
+.center {
+  text-align: center;
 }
 
 .social-links {
