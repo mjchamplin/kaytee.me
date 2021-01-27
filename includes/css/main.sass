@@ -18,6 +18,10 @@ $sans-serif: 'Poppins', Helvetica, sans-serif
 
 // Globals
 
+
+html
+  scroll-behavior: smooth
+
 body
   background-color: $pink
   color: $red
@@ -259,6 +263,12 @@ a:hover
 
 .center
   text-align: center
+
+:target:before
+  content: ""
+  display: block
+  height: 100px
+  margin: -100px 0 0
 
 // Social Buttons
 

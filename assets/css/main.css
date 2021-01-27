@@ -1,4 +1,8 @@
 @import "reset.css";
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #FFD8CA;
   color: #C46041;
@@ -319,6 +323,13 @@ a:hover {
 
 .center {
   text-align: center;
+}
+
+:target:before {
+  content: "";
+  display: block;
+  height: 100px;
+  margin: -100px 0 0;
 }
 
 .social-links {
