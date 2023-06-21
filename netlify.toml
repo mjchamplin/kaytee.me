@@ -3,3 +3,4 @@
 from = "/"
 to = "https://www.linkedin.com/in/kaytee-champlin-5092bb49/"
 status = 301
+force = true
